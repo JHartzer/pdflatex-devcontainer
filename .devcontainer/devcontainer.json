@@ -1,0 +1,13 @@
+{
+    "name": "latex-env",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "james-yu.latex-workshop"
+            ]
+        }
+    },
+    "build": {
+        "dockerfile": "Dockerfile"
+    }
+}
