@@ -4,6 +4,7 @@
     "latex-workshop.latex.autoClean.run": "onBuilt",
     "latex-workshop.latex.clean.subfolder.enabled": true,
     "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.bibtex-format.tab": "4 spaces",
     "latex-workshop.latex.search.rootFiles.include": [
         "root.tex",
     ],
@@ -63,10 +64,21 @@
                 "root.aux"
             ],
             "env": {}
+        },
+        {
+            "name": "preprocess",
+            "command": "/usr/bin/python3",
+            "args": [
+                "figures/preprocess.py"
+            ],
+            "env": {}
         }
     ],
     "[latex]": {
         "editor.defaultFormatter": "James-Yu.latex-workshop",
         "editor.formatOnSave": true,
+    },
+    "files.exclude": {
+        "**/*.hash": true
     }
 }
